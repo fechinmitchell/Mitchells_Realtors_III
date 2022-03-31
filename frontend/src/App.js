@@ -50,7 +50,7 @@ function App() {
         </Routes>
       </div>
     </ApolloProvider>
-  );
+  ); 
 }
 
 export default App;
