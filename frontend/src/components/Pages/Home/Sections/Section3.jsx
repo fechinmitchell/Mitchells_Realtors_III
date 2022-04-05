@@ -76,6 +76,7 @@ const Section_3 = () => {
                 <SwiperSlide key={index}>
                   <Card
                     info={{
+                      id: house.id,
                       category: "Buy",
                       imageSource: `http://localhost:1337${house.attributes.Preview_Image.data.attributes.url}`,
                       city: `${house.attributes.location.data.attributes.City}`,

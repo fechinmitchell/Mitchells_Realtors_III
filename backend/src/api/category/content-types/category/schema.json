@@ -4,8 +4,7 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "Category",
-    "description": ""
+    "displayName": "Category"
   },
   "options": {
     "draftAndPublish": true
@@ -16,12 +15,10 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::house.house",
-      "inversedBy": "categories"
+      "mappedBy": "categories"
     },
     "Category": {
-      "type": "string",
-      "required": true,
-      "unique": true
+      "type": "string"
     }
   }
 }

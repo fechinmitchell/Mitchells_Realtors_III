@@ -12,16 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "houses": {
+    "Houses": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::house.house",
       "mappedBy": "location"
     },
     "City": {
-      "type": "string",
-      "required": true,
-      "default": "ENTER_A_CITY"
+      "type": "string"
     }
   }
 }

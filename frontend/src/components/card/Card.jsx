@@ -27,7 +27,7 @@ const Card = ({ info, showInfo, secondClass }) => {
         </div>
         <img src={info.imageSource} alt="building" />
       </div>
-      <h3>{info.city}</h3>
+      <h3>{info.location}</h3>
       <h4>
         <p className={styles.neighbourhood}>{`${info.neighbourhood},`}</p>
         <p className={styles.street}>{` ${info.street}`}</p>

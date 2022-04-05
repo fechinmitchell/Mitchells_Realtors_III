@@ -4,7 +4,7 @@
   "info": {
     "singularName": "house",
     "pluralName": "houses",
-    "displayName": "house",
+    "displayName": "House",
     "description": ""
   },
   "options": {
@@ -13,71 +13,54 @@
   "pluginOptions": {},
   "attributes": {
     "Street": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "Rooms": {
-      "type": "integer",
-      "required": true
+      "type": "integer"
     },
     "Bedrooms": {
-      "type": "integer",
-      "required": true
-    },
-    "Bathrooms": {
-      "type": "integer",
-      "required": true
+      "type": "integer"
     },
     "Short_Andress": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "Preview_Image": {
       "type": "media",
       "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
-    },
-    "Images": {
-      "type": "media",
-      "multiple": true,
       "required": false,
       "allowedTypes": [
         "images",
         "files",
-        "videos"
+        "videos",
+        "audios"
       ]
     },
-    "categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::category.category",
-      "mappedBy": "houses"
-    },
     "Price": {
-      "type": "decimal",
-      "default": 0
+      "type": "decimal"
     },
     "Rent": {
-      "type": "decimal",
-      "default": 0
+      "type": "decimal"
     },
     "Description": {
       "type": "richtext"
+    },
+    "Neighbourhood": {
+      "type": "string"
     },
     "location": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::location.location",
+      "inversedBy": "Houses"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
       "inversedBy": "houses"
     },
-    "Neighbourhood": {
-      "type": "string",
-      "required": true
+    "Bathrooms": {
+      "type": "integer"
     }
   }
 }
