@@ -31,14 +31,14 @@
             a {
                 padding: 0.5rem 1.8rem;
                 background: white;
-                color: var(--dark-green);
+                color: var(--dark-red);
                 font-weight: 600;
                 border: 1px solid transparent;
                 transition: all ease-in-out 200ms;
 
                 &:hover {
                     border-color: whitesmoke;
-                    background: var(--dark-green);
+                    background: var(--dark-red);
                     color: whitesmoke;
                 }
             }
@@ -46,7 +46,7 @@
     }
 
     h3 {
-        color: var(--dark-green);
+        color: var(--dark-red);
         font-size: 1.1rem;
     }
 
@@ -118,23 +118,26 @@
         .card_btn {
             a {
                 font-size: 0.9rem;
-                background: var(--dark-green);
+                background: var(--dark-red);
                 padding: 0.5rem 1rem;
-                color: whitesmoke;
+                color: rgb(46, 12, 12);
+                border-color: rgb(46, 12, 12);
                 transition: all ease-in-out 200ms;
-                border: 1px solid transparent;
+                border: 1px solid;
 
                 &:hover {
-                    background: whitesmoke;
-                    border-color: var(--dark-green);
-                    color: var(--dark-green);
+                    background: rgb(46, 12, 12);
+                    border-color: rgb(46, 12, 12);
+                    color: rgb(255, 255, 255);
                 }
             }
         }
 
         h2 {
             font-size: 1.5rem;
-            color: var(--dark-green);
+            color: var(--dark-red);
+            border-color: var(--dark-red);
+
         }
     }
 }

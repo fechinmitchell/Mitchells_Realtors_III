@@ -24,10 +24,9 @@ const Section1 = () => {
       <div className={styles.section_1_content}>
         {/* SLOGAN */}
         <div className={styles.slogan}>
-          <h1>Easy Way To Find Your Dream House</h1>
+          <h1>Find a Home in California</h1>
           <p>
-            Search and find your dream house at affordable prices , but with the
-            best quality. Only available in Real
+            Mitchell's Realtors has the most beautiful homes available in all of California. 
           </p>
 
           {/* SEARCH BOX */}

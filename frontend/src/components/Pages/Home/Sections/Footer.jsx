@@ -13,7 +13,7 @@ const Footer = () => {
     <footer>
       <ul className={styles.brand}>
         <li>
-          <span>Real</span>
+          <span>Mitchell's Realtors</span>
         </li>
         <li>
           <span>Our Location</span>

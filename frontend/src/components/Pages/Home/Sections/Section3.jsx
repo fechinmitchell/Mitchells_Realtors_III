@@ -9,6 +9,8 @@ import Card from "../../../../components/card/Card";
 //DEPS
 import { SwiperSlide } from "swiper/react";
 import { useQuery, gql } from "@apollo/client";
+import { BUY_CARDS } from "../../../../utils/Queries";
+
 
 const CARD_DATA = gql`
   query GET_CARDS {
@@ -53,13 +55,13 @@ const CARD_DATA = gql`
 `;
 
 const Section_3 = () => {
-  const { loading, data, error } = useQuery(CARD_DATA);
+  const { loading, data, error } = useQuery(BUY_CARDS);
 
   return (
     <section className={styles.section_3}>
       <div className={styles.section_3_title}>
-        <h1>Best Houses</h1>
-        <ArrowButton text="See More" path="buy" />
+        <h1>Featured Houses</h1>
+        <ArrowButton text="See More" path="Buy" />
       </div>
 
       <div className={styles.cards}>

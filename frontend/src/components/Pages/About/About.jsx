@@ -1,10 +1,10 @@
-import styles from "./Buy.module.scss";
+import styles from "./About.module.scss";
 import Card from "../../card/Card";
 import { useQuery } from "@apollo/client";
 import { BUY_CARDS } from "../../../utils/Queries";
 import Navbar from "../../navbar/Navbar";
 
-const Buy = () => {
+const About = () => {
   const { loading, data, error } = useQuery(BUY_CARDS);
 
   return (
@@ -44,4 +44,4 @@ const Buy = () => {
   );
 };
 
-export default Buy;
+export default About;

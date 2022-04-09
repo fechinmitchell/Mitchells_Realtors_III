@@ -8,12 +8,12 @@
     cursor: pointer;
     width: max-content;
     a {
-        color: var(--dark-green);
+        color: var(--dark-red);
         font-size: 1rem;
         font-weight: 600;
     }
     svg {
-        color: var(--dark-green);
+        color: var(--dark-red);
         font-size: 1.1rem;
         transition: all ease-in-out 200ms;
     }
@@ -32,7 +32,7 @@
     }
 
     &:hover {
-        color: var(--green);
+        color: var(--red);
         svg {
             transform: translateX(3px);
         }
@@ -46,15 +46,15 @@
     button {
         padding: 0.3rem 1.5rem;
         border: 1px solid transparent;
-        background: var(--dark-green);
+        background: var(--dark-red);
         cursor: pointer;
         transition: all ease-in 250ms;
 
         &:hover {
             background: whitesmoke;
-            border: 1px solid var(--dark-green);
+            border: 1px solid var(--dark-red);
             span {
-                color: var(--dark-green);
+                color: var(--dark-red);
             }
         }
         span {

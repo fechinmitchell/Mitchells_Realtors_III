@@ -69,6 +69,7 @@ const Card = ({ info, showInfo, secondClass }) => {
         </div>
         <div className={styles.card_btn}>
           <Link to={`/property/${info.id}`}>See More</Link>
+          <Link to={`/team/${info.id}`}>Contact Rep</Link>
         </div>
       </div>
     </div>

@@ -50,7 +50,7 @@
         }
 
         h1 {
-            color: var(--dark-green);
+            color: var(--dark-red);
             font-size: 3rem;
             margin-bottom: 0.5rem;
             width: 80%;
@@ -84,7 +84,7 @@
             }
             @media screen and (max-width: 768px) {
                 font-size: 1.3rem;
-                color: var(--dark-green);
+                color: var(--dark-red);
             }
             @media screen and (max-width: 425px) {
                 font-size: 1.1rem;
@@ -142,7 +142,7 @@
             }
 
             span {
-                color: var(--dark-green);
+                color: var(--dark-red);
                 font-weight: 500;
                 font-size: 1.1rem;
                 height: 2rem;
@@ -153,7 +153,7 @@
                 outline: 1px solid var(--gray);
                 padding: 0.2rem 0.5rem;
                 font-size: 1rem;
-                color: var(--dark-green);
+                color: var(--dark-red);
                 width: 300px;
                 height: 28px;
                 @media screen and (max-width: 430px) {
@@ -168,12 +168,12 @@
                 width: 120px;
                 height: 28px;
                 font-size: 1rem;
-                color: var(--dark-green);
+                color: var(--dark-red);
                 @media screen and (max-width: 430px) {
                     width: 100%;
                 }
                 option {
-                    color: var(--dark-green);
+                    color: var(--dark-red);
                 }
             }
         }
@@ -201,8 +201,9 @@
         .btn_search {
             display: flex;
             border: none;
+            border-color: var(--dark-red);
             outline: none;
-            background: var(--dark-green);
+            background: var(rgb(80, 4, 4));
             transform: translateY(0.35rem);
             margin-right: 1rem;
             padding: 0;
@@ -215,8 +216,9 @@
             a {
                 padding: 0.5rem 1.5rem;
                 font-size: 1.3rem;
-                color: whitesmoke;
+                color: rgb(0, 0, 0);
                 border: 1px solid transparent;
+                border-color: var(--dark-red);
                 align-self: center;
                 transition: all ease-in-out 325ms;
                 @media screen and (max-width: 768px) {
@@ -225,9 +227,9 @@
             }
 
             &:hover a {
-                background: white;
-                border-color: var(--dark-green);
-                color: var(--dark-green);
+                background: rgb(112, 23, 2);
+                border-color: var(--dark-red);
+                color: var(rgb(255, 255, 255));
             }
         }
     }

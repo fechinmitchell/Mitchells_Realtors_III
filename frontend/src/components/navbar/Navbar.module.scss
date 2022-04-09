@@ -19,7 +19,7 @@ nav {
 
 .brand_logo a {
     font-size: 1.3rem;
-    color: var(--dark-green);
+    color: var(--dark-red);
     font-weight: 600;
 }
 
@@ -33,7 +33,7 @@ nav {
         flex-direction: column;
         gap: 1.5rem;
         font-size: 1.1rem;
-        background: var(--dark-green);
+        background: var(--dark-red);
         padding-top: 6rem;
         min-height: 100vh;
         transform: translateX(100%);
@@ -82,7 +82,7 @@ nav {
         padding-left: 5rem;
     }
     &:hover {
-        color: var(--dark-green);
+        color: var(--dark-red);
         @media screen and (max-width: 600px) {
             color: rgb(66, 182, 118);
         }
@@ -90,7 +90,7 @@ nav {
 }
 
 .active {
-    color: var(--dark-green) !important;
+    color: var(--dark-red) !important;
     font-weight: 500;
     @media screen and (max-width: 600px) {
         color: rgb(66, 182, 118) !important;
@@ -114,7 +114,7 @@ nav {
     }
 
     a {
-        color: var(--dark-green);
+        color: var(--dark-red);
         font-weight: 500;
     }
 

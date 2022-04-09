@@ -31,7 +31,7 @@ const Navbar = ({ BurgerColour }) => {
       <nav>
         {/* LOGO */}
         <div className={styles.brand_logo}>
-          <Link to="/">Real</Link>
+          <Link to="/">Mitchell's Realtors</Link>
         </div>
 
         {/* NAV-BURGER */}
@@ -61,16 +61,16 @@ const Navbar = ({ BurgerColour }) => {
           <MenuLink url="rent" path="Rent" />
           <MenuLink url="search" path="Search" />
           <MenuLink url="about" path="About" />
-          <Link to="/auth" className={styles.login}>
+          <a to="http://localhost:1337/admin/content-manager/collectionType/api::category.category?page=1&pageSize=10&sort=Category:ASC" className={styles.login}>
             <span>Login</span>
-          </Link>
+          </a>
         </ul>
 
         {/* Login */}
-        <Link to="/auth" className={styles.login_container}>
+        <a href="http://localhost:1337/admin/content-manager/collectionType/api::category.category?page=1&pageSize=10&sort=Category:ASC" target="_blank" className={styles.login_container}>
           <span style={{ color: BurgerColour }}>Login</span>
           <BsArrowRight style={{ color: BurgerColour }} />
-        </Link>
+        </a>
       </nav>
     </div>
   );
