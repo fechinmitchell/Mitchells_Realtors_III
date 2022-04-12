@@ -4,6 +4,8 @@ import { useQuery } from "@apollo/client";
 import { ABOUT_CARDS } from "../../../utils/Queries";
 import Navbar from "../../navbar/Navbar";
 import Footer from "../Home/Sections/Footer";
+import FAQs from "../Home/Sections/FAQs";
+
 
 const About = () => {
   const { loading, data, error } = useQuery(ABOUT_CARDS);
@@ -38,6 +40,8 @@ const About = () => {
           )}
         </div>
       </div>
+      <FAQs />
+
       <Footer />
 
     </main>

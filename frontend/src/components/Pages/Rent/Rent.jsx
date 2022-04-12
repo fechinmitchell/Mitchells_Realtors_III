@@ -3,6 +3,7 @@ import styles from "./Rent.module.scss";
 import Card from "../../card/Card";
 import { useQuery } from "@apollo/client";
 import { RENT_CARDS } from "../../../utils/Queries";
+import Footer from "../Home/Sections/Footer";
 
 const Rent = () => {
   const { loading, data, error } = useQuery(RENT_CARDS);
@@ -44,6 +45,9 @@ const Rent = () => {
           )}
         </div>
       </div>
+
+    <Footer />
+
     </main>
   );
 };

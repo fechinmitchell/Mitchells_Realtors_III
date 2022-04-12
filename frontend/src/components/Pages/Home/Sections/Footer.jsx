@@ -16,7 +16,12 @@ const Footer = () => {
           <span>Mitchell's Realtors</span>
         </li>
         <li>
-          <span>Our Location</span>
+          <span>Union Square,
+          </span>
+        </li>
+        <li>
+          <span>San Francisco 
+          </span>
         </li>
         <li>
           <span>Call Us : +123 456 789</span>
@@ -41,13 +46,13 @@ const Footer = () => {
           <span>Services</span>
         </li>
         <li>
-          <Link to="buy">Buy a House</Link>
+          <Link to="/buy">Buy a House</Link>
         </li>
         <li>
-          <Link to="rent">Rent a House</Link>
+          <Link to="/rent">Rent a House</Link>
         </li>
         <li>
-          <Link to="search">Sell a House</Link>
+          <Link to="/search">Sell a House</Link>
         </li>
       </ul>
 
@@ -59,10 +64,10 @@ const Footer = () => {
           <Link to="/about">About Us</Link>
         </li>
         <li>
-          <Link to="/">Contact Us</Link>
+          <Link to="/about">Contact Us</Link>
         </li>
         <li>
-          <Link to="/">Our Team</Link>
+          <Link to="/about">Our Team</Link>
         </li>
       </ul>
 
@@ -71,13 +76,13 @@ const Footer = () => {
           <span>Support</span>
         </li>
         <li>
-          <Link to="/">FAQ's</Link>
+          <Link to="/about">FAQ's</Link>
         </li>
         <li>
-          <Link to="/">Support Center</Link>
+          <Link to="/about">Support Center</Link>
         </li>
         <li>
-          <Link to="/">Help Center</Link>
+          <Link to="/about">Help Center</Link>
         </li>
       </ul>
 

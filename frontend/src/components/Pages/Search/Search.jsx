@@ -5,6 +5,7 @@ import { useState } from "react";
 import SearchContext from "./SearchContext";
 import Filters from "./Filters/Filters";
 import QueryCards from "./QueryCards";
+import Footer from "../Home/Sections/Footer";
 
 const Search = () => {
   //STATES
@@ -36,6 +37,7 @@ const Search = () => {
         <Filters />
         <QueryCards />
       </SearchContext.Provider>
+      <Footer />
     </main>
   );
 };

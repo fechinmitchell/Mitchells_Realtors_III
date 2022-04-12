@@ -3,6 +3,8 @@ import Card from "../../card/Card";
 import { useQuery } from "@apollo/client";
 import { BUY_CARDS } from "../../../utils/Queries";
 import Navbar from "../../navbar/Navbar";
+import Footer from "../Home/Sections/Footer";
+
 
 const Buy = () => {
   const { loading, data, error } = useQuery(BUY_CARDS);
@@ -40,6 +42,9 @@ const Buy = () => {
           )}
         </div>
       </div>
+
+    <Footer />
+
     </main>
   );
 };

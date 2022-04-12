@@ -27,7 +27,7 @@ const Card = ({ info, showInfo, secondClass }) => {
         </div>
         <img src={info.imageSource} alt="building" />
       </div>
-      <h3>{info.location}</h3>
+      <h3>{info.city}</h3>
       <h4>
         <p className={styles.neighbourhood}>{`${info.neighbourhood},`}</p>
         <p className={styles.street}>{` ${info.street}`}</p>
@@ -65,11 +65,11 @@ const Card = ({ info, showInfo, secondClass }) => {
           >{`${convertPrice(info.price)}$`}</h2>
           <h2 style={showInfo.rent ? {} : { display: "none" }}>{`${convertRent(
             info.rent
-          )} $ / m`}</h2>
+          )} $/m `}</h2>
         </div>
         <div className={styles.card_btn}>
           <Link to={`/property/${info.id}`}>See More</Link>
-          <Link to={`/team/${info.id}`}>Contact Rep</Link>
+          <Link to={`/about`}>Contact Team</Link>
         </div>
       </div>
     </div>
