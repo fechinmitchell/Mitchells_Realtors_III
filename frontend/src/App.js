@@ -6,6 +6,7 @@ import Home from "./components/Pages/Home/Home";
 import Rent from "./components/Pages/Rent/Rent";
 import Buy from "./components/Pages/Buy/Buy";
 import Search from "./components/Pages/Search/Search";
+import About from "./components/Pages/About/About";
 import Property from "./components/Pages/Property/Property";
 
 const client = new ApolloClient({
@@ -33,6 +34,7 @@ function App() {
           <Route path="rent" element={<Rent />} />
           <Route path="buy" element={<Buy />} />
           <Route path="search" element={<Search />} />
+          <Route path="about" element={<About />} />
           <Route path="property">
             <Route path=":propertyId" element={<Property />} />
           </Route>

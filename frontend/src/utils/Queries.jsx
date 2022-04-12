@@ -177,20 +177,16 @@ const FILTERED_CARDS = gql`
   }
 `;
 
-const CARD_DATA = gql`
-  query GET_BUY_CARDS {
-    houses(filters: { categories: { Category: { contains: "Buy" } } }) {
+const ABOUT_CARDS = gql`
+  query GET_ABOUT_CARDS {
+    abouts(filters: { categories: { Category: { contains: "Seller" } } }) {
       data {
         id
         attributes {
-          location {
-            data {
-              attributes {
-                City
-              }
-            }
-          }
-          Preview_Image {
+          Name
+          Email
+          City
+          Picture {
             data {
               attributes {
                 url
@@ -204,18 +200,51 @@ const CARD_DATA = gql`
               }
             }
           }
-          Neighbourhood
-          Street
-          Rooms
-          Bedrooms
-          Bathrooms
-          Short_Andress
-          Price
         }
       }
     }
   }
 `;
 
+// const CARD_DATA = gql`
+//   query GET_BUY_CARDS {
+//     houses(filters: { categories: { Category: { contains: "Buy" } } }) {
+//       data {
+//         id
+//         attributes {
+//           location {
+//             data {
+//               attributes {
+//                 City
+//               }
+//             }
+//           }
+//           Preview_Image {
+//             data {
+//               attributes {
+//                 url
+//               }
+//             }
+//           }
+//           categories {
+//             data {
+//               attributes {
+//                 Category
+//               }
+//             }
+//           }
+//           Neighbourhood
+//           Street
+//           Rooms
+//           Bedrooms
+//           Bathrooms
+//           Short_Andress
+//           Price
+//         }
+//       }
+//     }
+//   }
+// `;
 
-export { BUY_CARDS, RENT_CARDS, ID_CARD, FILTERED_CARDS };
+
+export { BUY_CARDS, RENT_CARDS, ID_CARD, FILTERED_CARDS, ABOUT_CARDS };

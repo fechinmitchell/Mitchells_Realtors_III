@@ -1,6 +1,7 @@
 import styles from "./Section1.module.scss";
 import Navbar from "../../../navbar/Navbar";
 import { Link } from "react-router-dom";
+import { ArrowButton } from "../../../buttons/Buttons";
 
 import { useState } from "react";
 import building1 from "../../../../assets/building1.jpg";
@@ -33,16 +34,19 @@ const Section1 = () => {
           <div className={styles.search_container}>
             {/* LOCATION */}
             <div className={styles.location_container}>
-              <span>Location</span>
-              <input
+              <span>Look For Your Dream House Today</span>
+              <p>Use our system to find specific attributes you look for in a house</p>
+              {/* <ArrowButton text="Search" path="search" /> */}
+
+              {/* <input
                 type="text"
                 placeholder="Enter a Location"
                 onChange={(e) => setLocation(e.target.value)}
                 value={location}
-              />
+              /> */}
             </div>
             {/* PRICE RANGE */}
-            <div className={styles.price_container}>
+            {/* <div className={styles.price_container}>
               <span>Price Range</span>
               <select
                 name="Price"
@@ -55,7 +59,7 @@ const Section1 = () => {
                 <option value="200k-500k">200k-500k</option>
                 <option value=">500k">{`>500k`}</option>
               </select>
-            </div>
+            </div> */}
 
             {/* SEARCH BUTTON */}
             <button className={styles.btn_search}>

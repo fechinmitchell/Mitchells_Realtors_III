@@ -1,38 +1,36 @@
 import styles from "./About.module.scss";
-import Card from "../../card/Card";
+import Card_About from "../../card/Card_About";
 import { useQuery } from "@apollo/client";
-import { BUY_CARDS } from "../../../utils/Queries";
+import { ABOUT_CARDS } from "../../../utils/Queries";
 import Navbar from "../../navbar/Navbar";
+import Footer from "../Home/Sections/Footer";
 
 const About = () => {
-  const { loading, data, error } = useQuery(BUY_CARDS);
+  const { loading, data, error } = useQuery(ABOUT_CARDS);
 
   return (
     <main>
       <Navbar />
       <div className={styles.content}>
-        <h1>Houses For Sale</h1>
+        <h1>Our Team Members</h1>
         <div className={styles.card}>
           {loading || error ? (
             <h1 style={{ color: "#351f24" }}>Loading ...</h1>
           ) : (
             <div className={styles.cards}>
-              {data.houses.data.map((house, index) => (
-                <Card
+              {data.abouts.data.map((about, index) => (
+                <Card_About
                   key={index}
                   secondClass={styles.card}
                   info={{
-                    id: house.id,
-                    category: "Buy",
-                    imageSource: `http://localhost:1337${house.attributes.Preview_Image.data.attributes.url}`,
-                    city: `${house.attributes.location.data.attributes.City}`,
-                    neighbourhood: `${house.attributes.Neighbourhood}`,
-                    street: `${house.attributes.Street}`,
-                    rooms: `${house.attributes.Rooms}`,
-                    bedrooms: `${house.attributes.Bedrooms}`,
-                    bathrooms: `${house.attributes.Bathrooms}`,
-                    shortAndress: `${house.attributes.Short_Andress}`,
-                    price: `${house.attributes.Price}`,
+                    id: about.id,
+                    category: "Seller",
+                    name: `${about.attributes.Name}`,
+                    email: `${about.attributes.Email}`,
+                    phone_number: `${about.attributes.Phone_Number}`,
+                    introduction: `${about.attributes.Introduction}`,
+                    city: `${about.attributes.City}`,
+                    imageSource: `http://localhost:1337${about.attributes.Picture.data.attributes.url}`,
                   }}
                 />
               ))}
@@ -40,8 +38,10 @@ const About = () => {
           )}
         </div>
       </div>
+      <Footer />
+
     </main>
+    
   );
 };
-
 export default About;

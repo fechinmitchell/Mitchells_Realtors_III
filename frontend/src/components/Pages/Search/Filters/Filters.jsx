@@ -2,6 +2,8 @@ import styles from "./Filters.module.scss";
 import PriceRange from "./PriceRange";
 import BuyCheckbox from "./BuyCheckbox";
 import RentCheckbox from "./RentCheckbox";
+import LocationCheckbox from "./LocationCheckbox";
+
 
 const Filters = () => {
   return (
@@ -13,6 +15,9 @@ const Filters = () => {
         </div>
         <div className={styles.category}>
           <RentCheckbox />
+        </div>
+        <div className={styles.category}>
+          <LocationCheckbox />
         </div>
       </div>
     </div>

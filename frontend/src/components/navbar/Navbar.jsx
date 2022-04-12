@@ -60,15 +60,15 @@ const Navbar = ({ BurgerColour }) => {
           <MenuLink url="buy" path="Buy" />
           <MenuLink url="rent" path="Rent" />
           <MenuLink url="search" path="Search" />
-          <MenuLink url="about" path="About" />
+          <MenuLink url="about" path="Team" />
           <a to="http://localhost:1337/admin/content-manager/collectionType/api::category.category?page=1&pageSize=10&sort=Category:ASC" className={styles.login}>
             <span>Login</span>
           </a>
         </ul>
 
-        {/* Login */}
+        {/* Staff Login */}
         <a href="http://localhost:1337/admin/content-manager/collectionType/api::category.category?page=1&pageSize=10&sort=Category:ASC" target="_blank" className={styles.login_container}>
-          <span style={{ color: BurgerColour }}>Login</span>
+          <span style={{ color: BurgerColour }}>Staff Login</span>
           <BsArrowRight style={{ color: BurgerColour }} />
         </a>
       </nav>

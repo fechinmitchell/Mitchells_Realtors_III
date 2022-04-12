@@ -10,13 +10,13 @@ const Section_2 = () => {
       </div>
       <div className={styles.section_2_slogan}>
         <h1>
-          Whether You're Buying, Selling Or Renting, We Can Help You Move
-          Forward
+          We Can Help You if You're Buying, Selling Or Renting. 
+          
         </h1>
       </div>
       <div className={styles.selection}>
         <div className={styles.buy}>
-          <h3>Buy a Home</h3>
+          <h3>Buying</h3>
           <p>
             Find your place with and immersive photo experience and the most
             listings, including things you won't find anywhere else
@@ -24,7 +24,7 @@ const Section_2 = () => {
           <ArrowButton text="Search Houses" path="buy" />
         </div>
         <div className={styles.rent}>
-          <h3>Rent a Home</h3>
+          <h3>Renting</h3>
           <p>
             We're creating a seasmless online expirience - from shopping on the
             largest rental network , to applying , to paying rent.
@@ -33,7 +33,7 @@ const Section_2 = () => {
         </div>
 
         <div className={styles.sell}>
-          <h3>Sell a Home</h3>
+          <h3>Selling</h3>
           <p>
             Wether you get a cash offer throught Real Offers or choose to sell
             traditionally, we can help you navigate a successful sale.

@@ -10,6 +10,7 @@ const Search = () => {
   //STATES
   const [buy, setBuy] = useState(true);
   const [rent, setRent] = useState(false);
+  const [location, setLocation] = useState("");
   const [priceFilter, setPriceFilter] = useState({
     minPrice: 0,
     maxPrice: 0,
@@ -22,6 +23,8 @@ const Search = () => {
     rent,
     setRent,
     priceFilter,
+    location,
+    setLocation,
     setPriceFilter,
   };
 
