@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "premium_articles",
+  "info": {
+    "singularName": "premium-article",
+    "pluralName": "premium-articles",
+    "displayName": "Premium Article"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Body": {
+      "type": "text"
+    }
+  }
+}

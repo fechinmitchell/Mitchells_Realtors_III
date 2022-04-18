@@ -4,6 +4,8 @@ import Section3 from "./Sections/Section3";
 import Section4 from "./Sections/Section4";
 import Section5 from "./Sections/Section5";
 import Footer from "./Sections/Footer";
+import LoginButton from "../Login/LoginButton";
+import LogoutButton from "../Login/LogoutButton";
 
 const Home = () => {
   return (
