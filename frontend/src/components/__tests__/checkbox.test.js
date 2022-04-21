@@ -23,6 +23,6 @@ describe("<BuyCheckbox />", () => {
     userEvent.click(cbEl);
     expect(cbEl).not.toBeChecked();
     expect(screen.queryByTestId("box")).not.toBeInTheDocument();
-  });
- 
+  }); 
+  
 });
