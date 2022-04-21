@@ -24,5 +24,5 @@ describe("<RentCheckbox />", () => {
     expect(cbEl).not.toBeChecked();
     expect(screen.queryByTestId("box")).not.toBeInTheDocument();
   });
-  
+
 });
