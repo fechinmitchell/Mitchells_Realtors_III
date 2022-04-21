@@ -12,6 +12,7 @@ import Login from "./components/Pages/Login/Login";
 import { useAuth0 } from '@auth0/auth0-react';
 
 
+
 const client = new ApolloClient({
   uri: "http://localhost:1337/graphql",
   cache: new InMemoryCache(),

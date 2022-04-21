@@ -15,7 +15,7 @@ const Login = () => {
   return (
     <main>
       <Navbar />
-      <div className={styles.content}>
+      <div data-testid="todo-1" className={styles.content}>
         <h1>My Account</h1>
         <div className={styles.card}>
           <LoginButton/>

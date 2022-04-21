@@ -75,9 +75,12 @@ const PriceRange = () => {
         <input
           type="number"
           placeholder="From"
+          data-testid="price-input"
           onChange={minInputHandler}
+          checked={minPrice}
           value={inputMinPrice}
         />
+        {inputMinPrice && !(/\S+@\S+\.\S+/).test(inputMinPrice) && <span className="error" data-testid="error-msg">Please enter a valid number.</span>}
         <select name="minPrice" onChange={minPriceHandler}>
           <option value={MIN_PRICE}>ANY</option>
           <option value="100000">100k</option>
@@ -89,9 +92,11 @@ const PriceRange = () => {
         <input
           type="number"
           placeholder="To"
+          // data-testid="price-input"
           value={inputMaxPrice}
           onChange={maxInputHandler}
         />
+        {/* {maxPrice && !(/\S+@\S+\.\S+/).test(maxPrice) && <span className="error" data-testid="error-msg">Please enter a valid number.</span>} */}
         <select name="maxPrice" onChange={maxPriceHandler}>
           <option value={MAX_PRICE}>ANY</option>
           <option value="100000">100k</option>

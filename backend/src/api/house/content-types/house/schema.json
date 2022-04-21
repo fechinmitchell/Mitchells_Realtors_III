@@ -36,7 +36,8 @@
       ]
     },
     "Price": {
-      "type": "decimal"
+      "type": "decimal",
+      "max": 100000000000
     },
     "Rent": {
       "type": "decimal"

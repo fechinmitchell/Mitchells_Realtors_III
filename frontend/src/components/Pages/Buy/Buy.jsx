@@ -12,7 +12,7 @@ const Buy = () => {
   return (
     <main>
       <Navbar />
-      <div className={styles.content}>
+      <div data-testid="todo-1" className={styles.content}>
         <h1>Houses For Sale</h1>
         <div className={styles.card}>
           {loading || error ? (

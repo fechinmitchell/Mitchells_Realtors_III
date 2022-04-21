@@ -20,7 +20,7 @@ const Card = ({ info, showInfo, secondClass }) => {
   }
 
   return (
-    <div className={`${styles.card_container} ${secondClass}`}>
+    <div data-testid="card" className={`${styles.card_container} ${secondClass}`}>
       <div className={styles.image_container}>
         <div className={styles.image_buy_btn}>
           <Link to="/">{`${info.category}`}</Link>
