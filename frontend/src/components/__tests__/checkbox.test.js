@@ -25,4 +25,4 @@ describe("<BuyCheckbox />", () => {
     expect(screen.queryByTestId("box")).not.toBeInTheDocument();
   }); 
   
-});
+}); 
