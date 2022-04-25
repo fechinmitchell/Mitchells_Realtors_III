@@ -9,7 +9,7 @@ import FAQs from "../Home/Sections/FAQs";
 
 const About = () => {
   const { loading, data, error } = useQuery(ABOUT_CARDS);
-
+ 
   return (
     <main>
       <Navbar />

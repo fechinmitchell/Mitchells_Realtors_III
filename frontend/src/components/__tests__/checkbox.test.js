@@ -16,7 +16,7 @@ describe("<BuyCheckbox />", () => {
  
   test('toggle element by selecting checkbox', () => {
     render(<BuyCheckbox />);
- 
+  
     const cbEl = screen.getByTestId("cbShowHide");
  
     // Execute the click event 
